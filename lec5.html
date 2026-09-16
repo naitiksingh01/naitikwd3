@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function multiply(a, b) {
+    return a * b;
+}
+
+let a = prompt("Enter first number:");
+let b = prompt("Enter second number:");
+
+let result = multiply(Number(a), Number(b));
+
+document.write("Result = " + result);
+</script>
+
+</body>
+</html-->
+
+
+<!-- // student management system with the help of javascript -->
+
+<html>
+    <body>
+
+        <h1>Student Management System</h1>
+        
+        <script>
+           let studentName = prompt("Enter student name:");
+              let studentAge = prompt("Enter student age:");
+              let studentRollNumber = prompt("Enter student roll number:");
+                document.write("Student Name: " + studentName + "<br>");
+
+                enter m1 = prompt("Enter marks of subject 1:");
+                enter m2 = prompt("Enter marks of subject 2:");
+                enter m3 = prompt("Enter marks of subject 3:");
+                enter m4 = prompt ("Enter marks of subject 4:");
+                enter m5 = prompt("Enter marks of subject 5:");
+                let total = Number(m1) + Number(m2) + Number(m3) + Number(m4) + Number(m5);
+                let percentage = (total / 500) * 100 ;
+                 let grade = if (percentage >= 90) {
+                    "A+";
+                } else if (percentage >= 80) {
+                    "A";
+                } else if (percentage >= 70) {
+                    "B";
+                } else if (percentage >= 60) {
+                    "C";
+                } else if (percentage >= 50) {  
+                    "D";
+                } else {
+                    "F";
+                }
+                document.write("Total Marks: " + total + "<br>");
+                document.write("Percentage: " + percentage + "%<br>");
+                document.write("Grade: " + grade);
+            
+            
+        </script>
+    </body>
+</html>
