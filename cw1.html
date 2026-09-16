@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+<link rel="stylesheet" href="assign1.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Student Management System</h1>
+    <div class="total-badge">
+      Total Students: <span id="totalCount">0</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+   
+    <section class="card">
+      <h2>Add New Student</h2>
+      <form id="studentForm" class="student-form">
+        <div class="form-group">
+          <label for="rollNo">Roll No.</label>
+          <input type="text" id="rollNo" required placeholder="e.g. 77">
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="e.g. Raj">
+        </div>
+        <div class="form-group">
+          <label for="branch">Branch</label>
+          <select id="branch" required>
+            <option value="" disabled selected>Select branch</option>
+            <option value="CSE">CSE</option>
+            <option value="DS">DS</option>
+            <option value="AIML">AIML</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <select id="year" required>
+            <option value="" disabled selected>Select year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Add Student</button>
+      </form>
+    </section>
+
+    
+    <section class="card">
+      <div class="controls">
+        <div class="form-group">
+          <label for="searchInput">Search by Name</label>
+          <input type="text" id="searchInput" placeholder="Type a name...">
+        </div>
+        <div class="form-group">
+          <label for="filterBranch">Filter by Branch</label>
+          <select id="filterBranch">
+            <option value="All">All Branches</option>
+            <option value="CSE">CSE</option>
+            <option value="DS">DS</option>
+            <option value="AIML">AIML</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="card">
+      <h2>Student List</h2>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Year</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+          
+        </tbody>
+      </table>
+      <p id="noRecordMsg" class="no-record" style="display:none;">No record found</p>
+    </section>
+
+  </main>
+
+<script src="assign1.js"></script>
+</body>
+</html>
